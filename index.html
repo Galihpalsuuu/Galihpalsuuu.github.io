@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Galih</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="galih foto/bmth.jpeg" alt="logo" class="logo-img"/>
+                <h1 class="logo-title">SYKES</h1>
+            </div>
+          
+            <nav>
+                <ul>
+                    <li><a href="#hobi">HOBI</a></li>
+                    <li><a href="mailto:galihsurbakti02@gmail.com">KONTAK</a></li>
+                </ul>
+            </nav>
+            <button class="btn-cta" onclick="redirInstagram()">Follow Saya</button>
+        </header>
+        <div class="container">
+            <div class="intro">
+                <p class="title">Hallo Galih in Here!</p>
+                <p class="description">Push It Back!</p>
+                <img src="galih foto/galih-1.jpeg" alt="Galih foto 1" class="img-foto"/>
+            </div>
+        </div>
+        <div class="parallax">
+            <div class="tentang">
+                <p class="title">Saya adalah manusia</p>
+                <p class="description">Eksistensiku menjadikanku hidup autentik didunia.</p>
+                <div class="mt-10">
+                    <button class="btn-cta" onclick="redirWhatsapp()">Mari Berteman</button>
+                </div>
+            </div>
+            <div class="container">
+                    <div class="card" id="hobi">
+                        <div class="card-item">
+                            <img src="galih foto/galih-5.jpeg" alt="img 1" class="skill"/>
+                            <p class="card-title">Futsal</p>
+                            <p class="card-description">Hobi saya futsal</p> 
+                        </div>  
+                        <div class="card-item">
+                            <img src="galih foto/galih-6.jpeg" alt="img 1" class="skill"/>
+                            <p class="card-title">Mendengarkan Musik</p>
+                            <p class="card-description">Only  music can save us</p> 
+                        </div>  
+                        <div class="card-item">
+                            <img src="galih foto/galih-7.jpeg" alt="img 1" class="skill"/>
+                            <p class="card-title">Photographer</p>
+                            <p class="card-description">Memotret momen berharga </p> 
+                        </div>  
+                    </div>
+            </div>
+        </div>
+        <footer>
+            <p class="title">&copy; Galih Surbakti </p>
+        </footer>
+
+        <script>
+            function redirInstagram() {
+                window.location.href ="https://www.instagram.com/galihpalsuuu"
+            }
+
+            function redirWhatsapp() {
+                window.location.href ="https://wa.me/+6289630092268"
+            }
+        </script>
+    </body>
+</html>

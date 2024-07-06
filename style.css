@@ -1,0 +1,214 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Helvetica;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #2F4F4F;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.logo {
+    color: black;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+}
+
+.logo-title {
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.logo:hover {
+    color: 	white;
+    transform: rotate(2deg);
+}
+
+.btn-cta {
+    margin-right: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 8px 12px;
+    background: #8B0000;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    padding: 20px;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+li a {
+    transition: all 0.5s ease 0s;
+    display: inline-block;
+
+}
+
+li a:hover {
+    color: #FFD700;
+    transform: rotate(2deg);
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.img-foto {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    max-width: 700px;
+}
+
+.parallax {
+    background-image: url('galih foto/galih-4.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.tentang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #2F4F4F;
+    color: black;
+    padding: 25px;
+}
+
+.mt-10 {
+    margin-top: 20px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-item {
+    text-align: center;
+    width: 25%;
+    min-height: 200px;
+    max-height: 300px;
+    background: white;
+    color: #222;
+    padding: 25px;
+    box-shadow: 1px 1px 5px 5px rgba(61, 2, 2, 0.699);
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.card-description {
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.skill {
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    padding: 4px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #2F4F4F;
+
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .card-item {
+        width: 100%;
+        opacity: 0.9;
+    }
+
+    .container {
+        padding: 20px 0 0 0;
+    }
+
+    .intro {
+        margin-top: 20px;
+    }
+
+    .img-foto {
+        padding: 0;
+    }
+
+    nav{
+        position: fixed;
+        bottom: 0;
+        background: #2F4F4F;
+    }
+
+    footer {
+        margin-bottom: 70px;
+        margin-top: 70px;
+    }
+
+}
